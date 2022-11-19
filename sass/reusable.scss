@@ -1,0 +1,46 @@
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  font-weight: $fw-regular;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+
+  transition: all 0.3s ease-in;
+
+  &--large {
+    padding: 2rem;
+  }
+
+  &--pink {
+    background-color: $light-pink;
+    border: .3rem solid transparent;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      border: .3rem solid $light-pink;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    border: .3rem solid transparent;
+    color: $black;
+
+    &:hover {
+      background-color: transparent;
+      border: .3rem solid $white;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+}
+
+.align-self-center {
+  align-self: center;
+}
